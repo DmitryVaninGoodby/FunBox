@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="title">
+                <img id="title" src="imgs/Тысегодняпокомилкота_.png">
+            </div>
+            <div class="foie-gras">
+                <img id="foie-gras" src="imgs/Сфуа-гра-Default.png">
+            </div>
+            <div class="fish">
+                <img id="fish" src = "imgs/Срыбой-Default.png">
+            </div>
+            <div class="chicken">
+                <img src="imgs/Скурой-Disabled.png">
+            </div>
+        </div>
+    </header>
+    <script type="text/javascript">
+        var foieGras = document.getElementById("foie-gras");
+        var mode = 1;
+        foieGras.onclick = function(){
+            if(mode>0){
+                foieGras.src = "imgs/Сфуа-гра-SelectedHover.png";
+            }
+            else{
+                foieGras.src = "imgs/Сфуа-гра-DefaultHover.png";
+            }
+            mode *= -1;
+        };
+        foieGras.onmouseover = function(){
+            if(mode>0){
+                foieGras.src = "imgs/Сфуа-гра-DefaultHover.png";
+            }
+            else{
+                foieGras.src = "imgs/Сфуа-гра-SelectedHover.png";
+            }
+        };
+        foieGras.onmouseout = function(){
+            if(mode>0){
+                foieGras.src = "imgs/Сфуа-гра-Default.png";
+            }
+            else{
+                foieGras.src = "imgs/Сфуа-гра-Selected.png";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        var fish = document.getElementById("fish");
+        var mod = 1;
+        fish.onclick = function(){
+            if(mod>0){
+                fish.src = "imgs/Срыбой-SelectedHover.png";
+            }
+            else{
+                fish.src = "imgs/Срыбой-DefaultHover.png";
+            }
+            mod *= -1;
+        };
+        fish.onmouseover = function(){
+            if(mod>0){
+                fish.src = "imgs/Срыбой-DefaultHover.png";
+            }
+            else{
+                fish.src = "imgs/Срыбой-SelectedHover.png";
+            }
+        };
+        fish.onmouseout = function(){
+            if(mod>0){
+                fish.src = "imgs/Срыбой-Default.png";
+            }
+            else{
+                fish.src = "imgs/Срыбой-Selected.png";
+            }
+        }
+    </script>
+</body>
+</html>

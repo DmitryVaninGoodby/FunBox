@@ -1,0 +1,52 @@
+body {
+    background: url(imgs/Pattern.png);
+}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+@media (max-width: 1202px) {
+    .container{
+        max-width: 970px;
+    }
+    .chicken{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1200px){
+    .container{
+        max-width: 750px;
+    }
+    .chicken{
+        margin-left: 190px;
+    }
+}
+@media (max-width: 772px){
+    .container{
+        max-width: none;
+    }
+    .chicken{
+        margin-left: 0px;
+    }
+    #title{
+        width: 350px;
+    }
+}
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.fish {
+    display: inline;
+    padding: 30px;
+}
+.foie-gras {
+    padding: 30px;
+    display: inline;
+}
+.chicken{
+    padding: 30px;
+    display: inline;
+}
